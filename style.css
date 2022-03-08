@@ -1,0 +1,96 @@
+body {
+    background-color:rgb(119, 46, 88);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+input[type=text] {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    height: 2rem;
+}
+
+input[type=number] {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    width: 100%;
+    height: 2rem;
+}
+
+.background {
+    background-color: rgba(27, 27, 50, 0.8);
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    width: 50%;
+    text-align: center;
+}
+
+ul {
+    background-color: rgba(27, 27, 50, 0.8);
+    justify-content: space-around;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    width: 50%;
+    text-align: center;
+    list-style: none;
+}
+
+.text {
+    color: white;
+}
+
+#btn {
+    width: 100%;
+    height: 2.375rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #37af65;
+    color: white;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: green;
+}
+.delete-btn {
+    width: 2.5;
+    height: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color:rgb(179, 31, 31);
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: red;
+}
+
+#error_msg {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: rgb(177, 137, 5);
+    width: 50%;
+    text-align: center;
+}

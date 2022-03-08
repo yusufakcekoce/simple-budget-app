@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="error_msg"></p>
+        <div class="title">
+            <h1 class="header">My Budget</h1>
+        </div>
+
+<!--  //////////  user entry  \\\\\\\\\\  -->
+
+        <form id="form" class="background">
+            <div class="form-control">
+                <label for="text">Item Name</label>
+                <br><input type="text" id="text" onfocus="this.value=''" placeholder="Enter Text">
+            </div>
+            <br>
+            <div class="form-control">
+                <label for="amount">Cost</label><br>
+                <input type="number" id="amount" onfocus="this.value=''" placeholder="Enter value...">
+            </div>
+            <br>
+            <button id="btn">Add</button>
+            </button>
+        </form>
+        <br>
+
+<!--  //////////  calculation  \\\\\\\\\\  -->
+
+        <div class="income-expense background">
+            <div class="bg-dark">
+                <h4>Inflow</h4>
+                <p class="income" id="income">$0.00</p>
+            </div>
+
+            <div class="bg-dark">
+                <h4>Outflow</h4>
+                <p class="expense" id="expense">$0.00</p>
+            </div>
+
+            <div class="bg-dark">
+                <h4>Balance</h4>
+                <p class="balance" id="balance">$0.00</p>
+            </div>
+        </div>
+        <h3 class="background">Summary</h3>
+
+        <ul id="list" class="list"></ul>
+    </div>
+<script src="script.js"></script>    
+</body>
+</html>
